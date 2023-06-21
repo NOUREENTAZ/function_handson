@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Handson</title>
+</head>
+
+<body>
+    <h3>Q.1 Create one function with zero parameter having a console statement </h3>
+    <div id="zero">→ Check Console Window(value printed in console At line no.4 in JS file)</div>
+
+
+
+
+    <hr>
+    <h3>Q.2 Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h3>
+    <div id="zero">→ Check Console Window (value printed in console At line no.11 in JS file)</div>
+
+
+
+
+
+    <hr>
+    <h3> Q.3 Create one arrow function</h3>
+    <div id="zero">→ Check Console Window (value printed in console At line no.16 in JS file)</div>
+
+
+
+
+
+    <hr>
+    <h3>Q.4 Print output: var x = 21; var girl = function () { console.log(x); var x = 20; }; girl ();</h3>
+
+    <p>Reason: The output value is Undefined because when the execution context was running ,before it could assign value to x, the x was called(console.log x). </p>
+
+
+    <hr>
+
+    <h3>Q.5 Print output: var x = 21; girl (); console.log(x) function girl() { console.log(x); var x = 20; };
+    </h3>
+    <p> In the process of memory allocation the function was skipped after var x = 21, and then there was console.log(x), So the execution context took the first declared value of x and printed in the output.</p>
+    <hr>
+    <h3>Q.6 Print output var x = 21; a(); b(); function a() { x = 20; console.log(x); }; function b() { x = 40; console.log(x); };
+    </h3>
+
+    <p>Reason: In the M.A execution context the x value printed as 21, then in the a function where the x was declared 20 before console.log(x) so the after execution of function scope the value of x which was 20 and it was near so it printed x = 20. Same
+        with the case of 40.</p>
+    <hr>
+    <h3>Q.7 Write a function that accepts parameter n and returns factorial of n</h3>
+
+    <h1> Factorial of number</h1>
+    Enter a number: <input id="numbers">
+    <br><br>
+    <button onclick="facto()"> Factorial</button>
+    <p id="ans"></p>
+
+
+
+    <hr>
+    <h2>Day 2</h2>
+
+    <h3>Q.1 Guess the Output function FindSum(a, b){ return a + b; } function DisplayData(data, batch){ console.log(`i am from ${data} and My batch is EA${batch}`) } DisplayData(""PrepBytes"", FindSum(10, 9));</h3>
+    <div id="day2"> → Output Display in console log line no. 11</div>
+    <hr>
+    <h3>Q.2 Guess the output Abc(); const Abc = function(){ let value = 20; console.log(value); }
+    </h3>
+    <div id="day2"> → Output cant Display in console log because can not access Abc(); before initilization while before creating function it will show undefined it will taking error</div>
+
+    <hr>
+
+    <h3>Q.3 Guess the output var a = 10; (function (){ console.log(a); var a = 20; })();
+    </h3>
+    <div id="day2"> → Output Display in console log line no. 12(undefined) because we declare value after print statement</div>
+
+
+    <hr>
+
+    <h3>Q.4 Guess the Output const greet = function(name){ return function(m){ console.log(`Hi!! ${name}, ${m}`); } } const greet_message = greet('EA19'); greet_message(""Welcome To PrepBytes"")</h3>
+    <div id="day2"> → Output Display in console log last line</div>
+
+    <hr>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
